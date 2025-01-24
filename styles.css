@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background: #2575fc;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column; /* Stack title and navbar vertically */
+  align-items: center; /* Center both title and navbar horizontally */
+  color: white;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0; /* Add spacing below the title */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center; /* Center navbar horizontally */
+  flex-wrap: wrap; /* Adjust for smaller screens */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #333;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #2575fc;
+  color: white;
+}
+
+/* Dropdown hover functionality */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Blog Section */
+.blog-section,
+.category-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2575fc;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2575fc;
+  display: inline-block;
+}
+
+.blog-posts-container,
+.category-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centering the items */
+  gap: 1rem;
+}
+
+.blog-post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 300px;
+}
+
+.blog-post h4 {
+  font-size: 1.1rem;
+  color: #2575fc;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: left;
+}
+
+/* Categories Section */
+.category-group {
+  margin-bottom: 2rem;
+}
+
+.category-group h3 {
+  font-size: 1.5rem;
+  color: #2575fc;
+  margin-bottom: 1rem;
+}
+
+.category-content .blog-post {
+  flex: 1 1 calc(33.33% - 1rem); /* Grid layout for posts */
+  max-width: calc(33.33% - 1rem);
+}
+
+.category-content .blog-post h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background: #2575fc;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    gap: 0.5rem;
+  }
+
+  .blog-posts-container,
+  .category-content {
+    flex-direction: column;
+  }
+
+  .category-content .blog-post {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-post h4,
+  .category-group h3 {
+    font-size: 1rem;
+  }
+}

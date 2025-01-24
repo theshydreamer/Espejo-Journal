@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Espejo Journal/styles.css">
+  <title>Espejo Journal</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="site-title">Espejo Journal</h1>
+      <nav class="nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#blogs" class="nav-link">Blogs</a>
+        <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Categories</a>
+          <div class="dropdown-menu">
+            <a href="#tech" class="dropdown-item">Tech</a>
+            <a href="#lifestyle" class="dropdown-item">Lifestyle</a>
+            <a href="#travel" class="dropdown-item">Travel</a>
+            <a href="#food" class="dropdown-item">Food</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Contact</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Blog Section -->
+    <section id="blogs" class="blog-section">
+      <h2 class="section-title">Latest Blogs</h2>
+      <div id="blog-posts" class="blog-posts-container"></div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="category-section">
+      <h2 class="section-title">Categories</h2>
+
+      <div id="tech" class="category-group">
+        <a href="#tech"><h3>Tech</h3></a>
+        <div class="category-content">
+          <div class="blog-post">
+            <h4>The Rise of AI</h4>
+            <p>AI is transforming the world of technology.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Quantum Computing</h4>
+            <p>The future of quantum computing and its applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="lifestyle" class="category-group">
+        <a href="#lifestyle"><h3>Lifestyle</h3></a>
+        <div class="category-content">
+          <div class="blog-post">
+            <h4>Healthy Living Tips</h4>
+            <p>Adopt a balanced diet and exercise regularly.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Mindfulness Practices</h4>
+            <p>Discover the benefits of mindfulness for everyday life.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="travel" class="category-group">
+        <a href="#travel"><h3>Travel</h3></a>
+        <div class="category-content">
+          <div class="blog-post">
+            <h4>Top 10 Travel Destinations</h4>
+            <p>Explore breathtaking locations across the globe.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Backpacking Adventures</h4>
+            <p>Tips and tricks for budget-friendly backpacking.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="food" class="category-group">
+        <a href="#food"><h3>Food</h3></a>
+        <div class="category-content">
+          <div class="blog-post">
+            <h4>Delicious Pasta Recipes</h4>
+            <p>Learn how to make mouthwatering pasta dishes.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Top 5 Desserts</h4>
+            <p>Indulge in these irresistible desserts for any occasion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Espejo Journal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
